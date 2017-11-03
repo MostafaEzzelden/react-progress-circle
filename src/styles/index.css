@@ -95,19 +95,8 @@ strong {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: #fff;
     border-radius: 50%;
     text-align: center;
     z-index: 2;
-};
 
-.progress .bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0.1;
-    border-radius: 50%;
-    display: block;
-    content: ' ';
-    z-index: 1;
 };

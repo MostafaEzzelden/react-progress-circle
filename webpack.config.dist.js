@@ -12,12 +12,27 @@ module.exports = {
 
   module: {
     loaders: [
-      {test: /\.jsx$/, loaders: ['babel']},
-      {test: /\.js$/, loaders: ['babel'], exclude: /node_modules/},
-      {test: /\.less$/, loaders: ["style-loader", "css-loader", "less-loader"]},
-      {test: /\.scss$/, loader: 'css?modules&localIdentName=[local]!postcss!sass'},
-      { test: /\.css$/, loader: "style-loader!css-loader" },
-    ]
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /(node_modules|bower_components)/,
+        loaders: ['babel']
+      },
+      {
+        test: /\.less$/,
+        loaders: ["style-loader", "css-loader", "less-loader"]
+      },
+      {
+        test: /\.scss$/,
+        loader: 'css?modules&localIdentName=[local]!postcss!sass'
+      },
+      {
+        test: /\.css$/,
+        loader: "style-loader!css-loader"
+      }
+    ],
+    stats: {
+      colors: true
+    }
   },
 
   resolve: {
