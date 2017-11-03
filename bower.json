@@ -1,0 +1,25 @@
+{
+  "name": "react-progress-circle",
+  "main": "dist/react-slick.min.js",
+  "version": "0.1.0",
+  "homepage": "",
+  "authors": [
+    "Mostafa Ezz"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "react": "~0.12.1",
+    "jquery": "~2.1.1",
+    "should": "~4.3.0",
+    "foundation-apps": "~1.0.2"
+  }
+}
