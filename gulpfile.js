@@ -96,7 +96,7 @@ gulp.task('dist-mincss', function() {
 var distConfig = require('./webpack.config.dist.js');
 gulp.task('dist-unmin', function (cb) {
   var unminConfig = assign({}, distConfig);
-  unminConfig.output.filename = 'react-create-module-infrastructure.js';
+  unminConfig.output.filename = 'react-progress-circle.js';
   return webpack(unminConfig, function (err, stat) {
     console.error(err);
     cb();
@@ -106,7 +106,7 @@ gulp.task('dist-unmin', function (cb) {
 
 gulp.task('dist-min', function (cb) {
   var minConfig = assign({}, distConfig);
-  minConfig.output.filename = 'react-create-module-infrastructure.min.js';
+  minConfig.output.filename = 'react-progress-circle.min.js';
   minConfig.plugins = minConfig.plugins.concat(
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
